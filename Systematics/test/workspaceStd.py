@@ -3,7 +3,7 @@
 import FWCore.ParameterSet.Config as cms
 import FWCore.Utilities.FileUtils as FileUtils
 import FWCore.ParameterSet.VarParsing as VarParsing
-from flashgg.Systematics.SystematicDumperDefaultVariables import minimalVariables,minimalHistograms,minimalNonSignalVariables,systematicVariables
+from flashgg.Systematics.SystematicDumperDefaultVariables import minimalVariables,minimalHistograms,minimalNonSignalVariables,systematicVariables,defaultVariables
 from flashgg.Systematics.SystematicDumperDefaultVariables import minimalVariablesHTXS,systematicVariablesHTXS
 import os
 from flashgg.MetaData.MetaConditionsReader import *
@@ -132,13 +132,13 @@ customize.options.register('doPdfWeights',
                            'doPdfWeights'
                            )
 customize.options.register('dumpTrees',
-                           False,
+                           True,
                            VarParsing.VarParsing.multiplicity.singleton,
                            VarParsing.VarParsing.varType.bool,
                            'dumpTrees'
                            )
 customize.options.register('dumpWorkspace',
-                           True,
+                           False,
                            VarParsing.VarParsing.multiplicity.singleton,
                            VarParsing.VarParsing.varType.bool,
                            'dumpWorkspace'
@@ -156,7 +156,7 @@ customize.options.register('verboseSystDump',
                            'verboseSystDump'
                            )
 customize.options.register('analysisType',
-                           'mainAnalysis',
+                           'lowMassAnalysis',
                            VarParsing.VarParsing.multiplicity.singleton,
                            VarParsing.VarParsing.varType.string,
                            'analysisType'
@@ -418,8 +418,10 @@ from flashgg.MetaData.samples_utils import SamplesManager
 
 process.source = cms.Source ("PoolSource",
                              fileNames = cms.untracked.vstring(
-                                 "/store/user/spigazzi/flashgg/Era2016_RR-07Aug17_v1/legacyRun2TestV1/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/Era2016_RR-07Aug17_v1-legacyRun2TestV1-v0-RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext2-v1/190228_142907/0000/myMicroAODOutputFile_610.root"
+#                                 "/store/user/spigazzi/flashgg/Era2016_RR-07Aug17_v1/legacyRun2TestV1/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/Era2016_RR-07Aug17_v1-legacyRun2TestV1-v0-RunIISummer16MiniAODv3-PUMoriond17_94X_mcRun2_asymptotic_v3_ext2-v1/190228_142907/0000/myMicroAODOutputFile_610.root"
+				 "file:/eos/user/a/atsatsos/FlashGG_Files/myMicroAODOutputFile_30GeV_test.root"
                              ))
+process.source.duplicateCheckMode = cms.untracked.string('noDuplicateCheck')
 
 process.TFileService = cms.Service("TFileService",
                                    fileName = cms.string("test.root"))
@@ -483,18 +485,18 @@ elif customize.doubleHTagsOnly:
     print tagList
 else:
     tagList=[
-        ["NoTag",0],
-        ["UntaggedTag",4],
-        ["VBFTag",3],
-        ["ZHLeptonicTag",0],
-        ["WHLeptonicTag",0],
-        ["VHLeptonicLooseTag",0],
-        ["VHMetTag",0],
-        ["VHHadronicTag",0],
-        ["TTHHadronicTag",4],
-        ["TTHLeptonicTag",4],
-        ["THQLeptonicTag",0],
-        ["TTHDiLeptonTag",0]
+#        ["NoTag",0],
+        ["UntaggedTag",3],
+#        ["VBFTag",3],
+#        ["ZHLeptonicTag",0],
+#        ["WHLeptonicTag",0],
+#        ["VHLeptonicLooseTag",0],
+#        ["VHMetTag",0],
+#        ["VHHadronicTag",0],
+#        ["TTHHadronicTag",4],
+#        ["TTHLeptonicTag",4],
+#        ["THQLeptonicTag",0],
+#        ["TTHDiLeptonTag",0]
         ]
 
 definedSysts=set()
@@ -539,29 +541,55 @@ for tag in tagList:
           nPdfWeights = -1
           nAlphaSWeights = -1
           nScaleWeights = -1
+#      cfgTools.addCategory(process.tagsDumper,
+#                           systlabel,
+#                           classname=tagName,
+#                           cutbased=cutstring,
+#                           subcats=tagCats,
+#                           variables=defaultVariables,
+#                           histograms=minimalHistograms,
+#                           binnedOnly=isBinnedOnly,
+#                           dumpPdfWeights=dumpPdfWeights,
+#                           nPdfWeights=nPdfWeights,
+#                           nAlphaSWeights=nAlphaSWeights,
+#                           nScaleWeights=nScaleWeights,
+#                           splitPdfByStage0Cat=customize.doHTXS
+#                           ) 
+### For when PDF Weights get segfaulted
       cfgTools.addCategory(process.tagsDumper,
                            systlabel,
                            classname=tagName,
                            cutbased=cutstring,
                            subcats=tagCats, 
-                           variables=currentVariables,
+                           variables=defaultVariables,
                            histograms=minimalHistograms,
                            binnedOnly=isBinnedOnly,
-                           dumpPdfWeights=dumpPdfWeights,
-                           nPdfWeights=nPdfWeights,
-                           nAlphaSWeights=nAlphaSWeights,
-                           nScaleWeights=nScaleWeights,
-                           splitPdfByStage0Cat=customize.doHTXS
+                           dumpPdfWeights=False,
+                           nPdfWeights=-1,
+                           nAlphaSWeights=-1,
+                           nScaleWeights=-1,
+                           splitPdfByStage0Cat=False
                            )
 
 # Require standard diphoton trigger
 filterHLTrigger(process, customize)
+#from HLTrigger.HLTfilters.hltHighLevel_cfi import hltHighLevel
+#process.hltHighLevel= hltHighLevel.clone(HLTPaths = cms.vstring(
+#                                                               "HLT_Diphoton30_18_R9IdL_AND_HE_AND_IsoCaloId_NoPixelVeto*" 
+#                                                               "HLT_Diphoton30_22_R9Id_OR_IsoCaloId_AND_HE_R9Id_Mass90_v*",
+#                                                               "HLT_Diphoton30PV_18PV_R9Id_AND_IsoCaloId_AND_HE_R9Id_DoublePixelVeto_Mass55_v1",
+#                                                               "HLT_Diphoton30EB_18EB_R9Id_OR_IsoCaloId_AND_HE_R9Id_DoublePixelVeto_Mass55_v1"
+#                                                                ))
 
 process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(True) )
 
+print "customize.processId",customize.processId
+
 process.dataRequirements = cms.Sequence()
-if customize.processId == "Data":
-        process.dataRequirements += process.hltHighLevel
+if customize.processId == "Data": #Al test
+    process.dataRequirements += process.hltHighLevel
+
+#process.dataRequirements += process.hltHighLevel
 
 # Split WH and ZH
 process.genFilter = cms.Sequence()
@@ -774,5 +802,7 @@ if customize.verboseSystDump:
 #print process.dumpPython()
 #processDumpFile = open('processDump.py', 'w')
 #print >> processDumpFile, process.dumpPython()
+customize.setDefault("maxEvents", -1)
+customize.setDefault("targetLumi", 54382.09598)
 # call the customization
 customize(process)
