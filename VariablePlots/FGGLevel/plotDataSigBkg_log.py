@@ -124,6 +124,7 @@ c1.cd()
 pad1 = TPad("pad1","pad1", 0, 0.35, 1, 1.0)
 pad1.Draw()
 pad1.cd()
+pad1.SetLogy()
 pad1.SetBottomMargin(0.)
 pad1.SetLeftMargin(0.11)
 
@@ -270,8 +271,8 @@ CMS_lumi.relPosX = 0.12
 CMS_lumi.CMS_lumi(pad1, 0, 0)
 c1.Update()
 
-c1.SaveAs("DataMCSig_"+lbl+".png")
-c1.SaveAs("DataMCSig_"+lbl+".pdf")
+c1.SaveAs("DataMCSig_"+lbl+"_log.png")
+c1.SaveAs("DataMCSig_"+lbl+"_log.pdf")
 
 print("Data: ",data0.Integral())
 print("MGG: ",mgg0.Integral())
