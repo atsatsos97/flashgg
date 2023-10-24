@@ -1,10 +1,10 @@
 from ROOT import *
 import CMS_lumi
 
-isMC = False
+isMC = True
 isGJet = False
-isQCD = False
-isSideband = True
+isQCD = True
+isSideband = False
 
 #Overall histo
 minmax_0 = TH2F("minmax_0","minmax_0",50,-1,1,50,-1,1)
@@ -135,7 +135,7 @@ if (isMC):
 else:
   if(isSideband):
     print "Data Sideband"
-    file = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/BkgMCCutFlowPlots_v2/FGGLevel/DataDriven/output_sideband.root","READ")
+    file = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/VariablePlots/FGGLevel/DataDriven/output_sideband.root","READ")
 
     tree_0 = file.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_0")
     tree_1 = file.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_1")
@@ -192,7 +192,7 @@ gPad.SetLogz()
 c1.SetBottomMargin(0.17)
 c1.SetLeftMargin(0.11)
 
-minmax_0.GetYaxis().SetTitle("Max #gamma ID")
+minmax_0.GetYaxis().SetTitle("Min #gamma ID")
 minmax_0.GetYaxis().SetTitleSize(30)
 minmax_0.GetYaxis().SetTitleFont(43)
 minmax_0.GetYaxis().SetTitleOffset(1.5)
@@ -200,7 +200,7 @@ minmax_0.GetYaxis().SetLabelFont(43)
 minmax_0.GetYaxis().SetLabelSize(25)
 minmax_0.GetYaxis().SetLabelOffset(0.02)
 
-minmax_0.GetXaxis().SetTitle("Min #gamma ID")
+minmax_0.GetXaxis().SetTitle("Max #gamma ID")
 minmax_0.GetXaxis().SetTitleSize(30)
 minmax_0.GetXaxis().SetTitleFont(43)
 minmax_0.GetXaxis().SetTitleOffset(1.75)

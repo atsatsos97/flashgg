@@ -72,6 +72,7 @@ namespace flashgg {
 
         bool doDecorr_;
 
+//Additional variables
         float mass_;
         DecorrTransform* transfEBEB_;
         DecorrTransform* transfNotEBEB_;
@@ -348,6 +349,7 @@ namespace flashgg {
             cosphi_            = TMath::Cos( deltaPhi( g1->phi(), g2->phi() ) );
             //            std::cout<<"mass "<<diPhotons->ptrAt( candIndex )->mass()<<std::endl;
             //            std::cout<<"sigmarv "<<sigmarv_<<std::endl;
+
             if(doDecorr_){
                 //                std::cout<<"sigmaMdecorrFile is set, so we evaluate the transf"<<std::endl;
                 mass_sigma[0]=diPhotons->ptrAt( candIndex )->mass();

@@ -51,7 +51,7 @@ ddt0 = ddf.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_0")
 #Create histograms
 lm = TH1F("lm","lm",40,-1.0,1.0)
 lm.Sumw2()
-mc = TH1F("mc","mc",40,-1.0,1.0)
+mc = TH1F("mc","mc",200,-1.0,1.0)
 mc.Sumw2()
 #dd_A = TH1F("dd_A","dd_A",40,-1.0,1.0)
 #dd_BC = TH1F("dd_BC","dd_BC",40,-1.0,1.0)
@@ -171,4 +171,3 @@ c1.SaveAs(outputdir+"/DiphoMVA_DataBkg.pdf")
 
 print "Lowmass Data: ",lm.Integral()
 print "MC Data: ",mc.Integral()
-print "Data Data : ",dd.Integral()

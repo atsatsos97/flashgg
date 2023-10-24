@@ -54,10 +54,13 @@ process.RandomNumberGeneratorService.flashggRandomizedPhotons = cms.PSet(
 #80x data
 #process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/data/Run2016B/DoubleEG/MINIAOD/PromptReco-v2/000/273/158/00000/1E5ABF54-E019-E611-AAED-02163E01293F.root")) # /DoubleEG/Run2016B-PromptReco-v2/MINIAOD
 
-#Background MC Test for Diphoton 80-Inf
-process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/mc/RunIISummer20UL18MiniAODv2/DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/50000/C036CAF3-46AB-DC48-A8CF-16D680818D41.root",
-                                                                         "/store/mc/RunIISummer20UL18MiniAODv2/DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/50000/42509035-6D9D-F041-B91E-D05A5B5E0D57.root",
-                                                                         "/store/mc/RunIISummer20UL18MiniAODv2/DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/50000/B2A608C1-3594-5145-8689-27ECDC21DB94.root"))
+#Background MC Test for Diphoton 80-Inf #
+#process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/mc/RunIISummer20UL18MiniAODv2/DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/50000/C036CAF3-46AB-DC48-A8CF-16D680818D41.root",
+#                                                                         "/store/mc/RunIISummer20UL18MiniAODv2/DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/50000/42509035-6D9D-F041-B91E-D05A5B5E0D57.root",
+#                                                                         "/store/mc/RunIISummer20UL18MiniAODv2/DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/50000/B2A608C1-3594-5145-8689-27ECDC21DB94.root"))
+
+#2018 Data for quick check
+process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/data/Run2018A/EGamma/MINIAOD/UL2018_MiniAODv2-v1/2320000/8772303F-104D-0743-9971-7E3E86178307.root"))
 
 process.RandomNumberGeneratorService = cms.Service("RandomNumberGeneratorService")
 process.RandomNumberGeneratorService.flashggRandomizedPhotons = cms.PSet(

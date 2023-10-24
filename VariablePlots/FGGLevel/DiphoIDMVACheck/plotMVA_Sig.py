@@ -28,6 +28,8 @@ if not os.path.exists(outputdir):
 else:
     print("Directory "+outputdir+" already exists.")
 
+tree1 = [10, 15]
+
 for i in range(5,75,5):
     lmfname = inputdir+"/DefLM_MCBased/ggH_2018/ggh_M"+str(i)+".root"
     mcfname = inputdir+"/MCBased/ggH_2018/ggH_M"+str(i)+"_merged.root"
