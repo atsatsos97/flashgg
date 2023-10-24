@@ -3,13 +3,19 @@ from ROOT import *
 gStyle.SetOptFit(1)
 gStyle.SetOptStat(0)
 
-c_spline = TCanvas("c_spline", "c_spline", 700, 500)
+c_spline = TCanvas("c_spline", "c_spline", 1200, 1000)
 c_spline.cd()
 
-file_minID = TFile("minid_gjetqcd40.root", "READ")
-h_minID = file_minID.Get("bkg0")
-h_minID_clone = h_minID.Clone()
-h_minID.GetXaxis().SetRangeUser(-0.9,0.8)
+file_minID = TFile("minid_gjetqcd.root", "READ")
+h_minID_gj0 = file_minID.Get("gj0")
+h_minID_qcd0 = file_minID.Get("qcd0")
+
+h_minID_clone = h_minID_gj0.Clone("h_minID")
+h_minID.Add(h_minID_qcd0)
+
+h_minID.GetXaxis().SetRangeUser(-0.9,1.0)
+#h_minID.GetXaxis().SetRangeUser(-0.9,0.8)
+
 h_minID.Smooth(1, "R")
 g_minID = TGraph()
 
@@ -45,5 +51,5 @@ g_spline.Draw("L")
 g_spline.SetTitle("Spline Fit of Minimum Photon ID")
 
 g_spline.SaveAs("spline.root")
-#c_spline.SaveAs("MinID_Spline_GJetQCD40andUp_HistSmooth.png")
-#c_spline.SaveAs("MinID_Spline_GJetQCD40andUp_HistSmooth.pdf")
+c_spline.SaveAs("MinID_Spline_GJetQCD40andUp_HistSmooth.png")
+c_spline.SaveAs("MinID_Spline_GJetQCD40andUp_HistSmooth.pdf")

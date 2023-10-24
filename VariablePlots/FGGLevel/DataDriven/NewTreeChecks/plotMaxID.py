@@ -2,22 +2,22 @@ from ROOT import *
 import CMS_lumi
 
 #Obtain histogram files
-data = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_Data_Lowmassxml_v1/output_EGamma_alesauva-UL2018_0-10_6_4-v0-Run2018-12Nov2019_UL2018-981b04a73c9458401b9ffd78fdd24189_USER.root","READ") #Data with unweighted events, both regions
-sideband = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/BkgMCCutFlowPlots_v2/FGGLevel/DataDriven/output_sideband.root","READ") #Sideband tree with reweight - replaces gjet and QCD
-mgg040 = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG0to40_v1/output_DiPhotonJetsBox_M0_40-Sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_DiphotonMass0to40_v04062023-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
-mgg4080 = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2/output_DiPhotonJetsBox_M40_80-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
-mgg80inf = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v3/output_DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
-
+data = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NEW_BDT_TRAININGS/DefLM_MCBased/2018Data/2018EGamma.root","READ") #Data with unweighted events, both regions                                                                                                                                                               
+sideband = TFile("/afs/cern.ch/work/e/elfontan/private/DiPhotonAnalysis/Sep2023_flashGG/newFlashggRepo/CMSSW_10_6_8/src/flashgg/VariablePlots/FGGLevel/DataDriven/output_sideband.root","READ") #Sideband tree with reweight - replaces gjet and QCD                                                                                       
+#sideband = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/BkgMCCutFlowPlots_v2/FGGLevel/DataDriven/output_sideband.root","READ") #Sideband tree with reweight - replaces gjet and QCD                                                                                                                          
+mgg040 = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG0to40_v2/output_DiPhotonJetsBox_M0_40-Sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_DiphotonMass0to40_v04062023-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
+mgg4080 = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG40to80_v2/output_DiPhotonJetsBox_M40_80-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
+mgg80inf = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG80toInf_v2//output_DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
 
 #Get trees and create histograms for data
 dat0 = data.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_0")
-dat1 = data.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_1")
-dat2 = data.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_2")
-dat3 = data.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_3")
+#dat1 = data.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_1")
+#dat2 = data.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_2")
+#dat3 = data.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_3")
 sb0 = sideband.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_0")
-sb1 = sideband.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_1")
-sb2 = sideband.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_2")
-sb3 = sideband.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_3")
+#sb1 = sideband.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_1")
+#sb2 = sideband.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_2")
+#sb3 = sideband.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_3")
 mgg040_0 = mgg040.Get("tagsDumper/trees/mgg_bkg_13TeV_UntaggedTag_0")
 mgg040_1 = mgg040.Get("tagsDumper/trees/mgg_bkg_13TeV_UntaggedTag_1")
 mgg040_2 = mgg040.Get("tagsDumper/trees/mgg_bkg_13TeV_UntaggedTag_2")
@@ -55,19 +55,19 @@ bkg0.SetMaximum(40000)
 
 #Sideband/Presel regions: CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0
 dat0.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>sbb0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0","goff")
-dat1.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sbb0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0","goff")
-dat2.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sbb0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0","goff")
-dat3.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sbb0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0","goff")
+#dat1.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sbb0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0","goff")
+#dat2.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sbb0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0","goff")
+#dat3.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sbb0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)<-0.7 && event%20==0","goff")
 
 sb0.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>sba0","abs(weight)*(CMS_hgg_mass>0 && event%20==0)","goff")
-sb1.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sba0","abs(weight)*(CMS_hgg_mass>0 && event%20==0)","goff")
-sb2.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sba0","abs(weight)*(CMS_hgg_mass>0 && event%20==0)","goff")
-sb3.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sba0","abs(weight)*(CMS_hgg_mass>0 && event%20==0)","goff")
+#sb1.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sba0","abs(weight)*(CMS_hgg_mass>0 && event%20==0)","goff")
+#sb2.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sba0","abs(weight)*(CMS_hgg_mass>0 && event%20==0)","goff")
+#sb3.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+sba0","abs(weight)*(CMS_hgg_mass>0 && event%20==0)","goff")
 
 dat0.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>pre0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7 && event%20==0","goff")
-dat1.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+pre0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7 && event%20==0","goff")
-dat2.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+pre0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7 && event%20==0","goff")
-dat3.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+pre0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7 && event%20==0","goff")
+#dat1.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+pre0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7 && event%20==0","goff")
+#dat2.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+pre0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7 && event%20==0","goff")
+#dat3.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+pre0","CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7 && event%20==0","goff")
 
 mgg040_0.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>mgg0l","abs(weight)*(CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7)","goff")
 mgg040_1.Draw("max(dipho_leadIDMVA,dipho_subleadIDMVA)>>+mgg0l","abs(weight)*(CMS_hgg_mass>0 && min(dipho_leadIDMVA,dipho_subleadIDMVA)>-0.7)","goff")

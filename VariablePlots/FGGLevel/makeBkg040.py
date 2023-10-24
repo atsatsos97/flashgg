@@ -1,4 +1,5 @@
 from ROOT import *
+import math
 
 #Argument Parser to input variable and range values
 import argparse
@@ -112,17 +113,17 @@ c1.cd()
 mgg040.SetFillColor(kRed)
 mgg040.SetLineColor(kBlack)
 mgg040.GetYaxis().SetTitle("Events Accepted")
-mgg040.SaveAs("mgg_040.root")
+mgg040.SaveAs("DataDriven/bkg_histos/mgg_040.root")
 
 gj040.SetFillColor(kBlue)
 gj040.SetLineColor(kBlack)
 gj040.GetYaxis().SetTitle("Events Accepted")
-gj040.SaveAs("gj_040.root")
+gj040.SaveAs("DataDriven/bkg_histos/gj_040.root")
 
 qcd040.SetFillColor(kYellow)
 qcd040.SetLineColor(kBlack)
 qcd040.GetYaxis().SetTitle("Events Accepted")
-qcd040.SaveAs("qcd_040.root")
+qcd040.SaveAs("DataDriven/bkg_histos/qcd_040.root")
 
 print("MGG: ",mgg040.Integral())
 print("GJet: ",gj040.Integral())

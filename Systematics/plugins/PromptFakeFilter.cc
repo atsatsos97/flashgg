@@ -40,7 +40,7 @@ PromptFakeFilter::filter(edm::Event& iEvent, const edm::EventSetup& iSetup)
     accepted = (leadMatchType != 1 && subleadMatchType != 1);
   } else if (promptFake_) {
     accepted = (!(leadMatchType==1 && subleadMatchType==1) && (leadMatchType==1 || subleadMatchType==1));
-  } else if (acceptBoth_) {;
+  } else if (acceptBoth_) {
     accepted = ( !(leadMatchType==1 && subleadMatchType==1) );
   }
 

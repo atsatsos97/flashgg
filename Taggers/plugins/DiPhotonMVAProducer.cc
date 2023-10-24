@@ -48,7 +48,6 @@ namespace flashgg {
 //Old BDT Variables
         float sigmarv_;
         float sigmawv_;
-        float vtxprob_;
         float leadptom_;
         float subleadptom_;
         float leadeta_;
@@ -57,10 +56,9 @@ namespace flashgg {
         float leadmva_;
         float subleadmva_;
         float sigmarv_decorr_;
+        float vtxprob_;
 
 //New BDT Variables - may switch back to old naming via TMVAClassification.C on bottom
-        float sigmaMrvoM_;
-        float sigmaMwvoM_;
         float dipho_lead_ptoM_;
         float dipho_sublead_ptoM_;
         float leadEta_;
@@ -68,6 +66,8 @@ namespace flashgg {
         float cosphi_;
         float dipho_leadIDMVA_;
         float dipho_subleadIDMVA_;
+        float sigmaMrvoM_;
+        float sigmaMwvoM_;
         float sigmaMrvoM_decorr_;
 
         bool doDecorr_;
@@ -81,6 +81,7 @@ namespace flashgg {
         vector<double> vertex_prob_params_noConv;
 
         std::string Version_;
+
     };
 
     DiPhotonMVAProducer::DiPhotonMVAProducer( const ParameterSet &iConfig ) :
@@ -128,9 +129,8 @@ namespace flashgg {
         std::string version_new = "new";
         std::string version_xgb = "xgb";
 
-        std::string mcbdt_file = "/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Taggers/data/TMVAClassification_MCBDT.weights.xml";
-        std::string databdt_file = "/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Taggers/data/TMVAClassification_DataBDT.weights.xml";
-        std::cout<<"DiphotonMVA Weight File Full Path: "<<diphotonMVAweightfile_.fullPath()<<std::endl;
+        std::string mcbdt_file = "TMVAClassification_MCBDT";
+        std::string databdt_file = "TMVAClassification_DataBDT";
 
         if( version_old.compare( Version_ ) == 0 ) {
             DiphotonMva_.reset( new TMVA::Reader( "!Color:Silent" ) );
@@ -144,13 +144,11 @@ namespace flashgg {
             DiphotonMva_->AddVariable( "TMath::Cos(ph1.phi-ph2.phi)", &CosPhi_ );
             DiphotonMva_->AddVariable( "ph1.idmva", &leadmva_ );
             DiphotonMva_->AddVariable( "ph2.idmva", &subleadmva_ );
-            //            std::cout<<"BDT, old, is booked reading weight file "<<diphotonMVAweightfile_.fullPath()<<std::endl;
             DiphotonMva_->BookMVA( "BDT", diphotonMVAweightfile_.fullPath() );
-            //            std::cout << "finished reading mva" << std::endl;
         }
 
         if( version_new.compare( Version_ ) == 0 ) {
-            if( (mcbdt_file.compare( diphotonMVAweightfile_.fullPath() ) == 0) || (databdt_file.compare( diphotonMVAweightfile_.fullPath() ) == 0) ) {
+            if( (diphotonMVAweightfile_.fullPath().find(mcbdt_file) != std::string::npos) || (diphotonMVAweightfile_.fullPath().find(databdt_file) != std::string::npos) ) {
                 std::cout << "Adding New BDT Variables... " << std::endl;
                 DiphotonMva_.reset( new TMVA::Reader( "!Color:Silent" ) );
                 DiphotonMva_->AddVariable( "dipho_lead_ptoM", &dipho_lead_ptoM_ );
@@ -167,7 +165,7 @@ namespace flashgg {
                 //            std::cout<<"BDT, new, is booked reading weight file "<<diphotonMVAweightfile_.fullPath()<<std::endl;
                 DiphotonMva_->BookMVA( "BDT", diphotonMVAweightfile_.fullPath() );
                 //            std::cout << "finished reading mva" << std::endl;
-            }else{
+            } else{
                 std::cout << "Adding Lowmass BDT Variables... " << std::endl;
                 DiphotonMva_.reset( new TMVA::Reader( "!Color:Silent" ) );
                 DiphotonMva_->AddVariable( "leadptom", &leadptom_ );
@@ -384,20 +382,21 @@ namespace flashgg {
                                                 2 ) + vertex_prob_params_noConv.at( 2 ) * pow( vtxProbMVA_, 3 ) + vertex_prob_params_noConv.at( 3 ) * pow( vtxProbMVA_, 4 );
             }
 
-            std::string mcbdt_file = "/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Taggers/data/TMVAClassification_MCBDT.weights.xml";
-            std::string databdt_file = "/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Taggers/data/TMVAClassification_DataBDT.weights.xml";
+            std::string mcbdt_file = "TMVAClassification_MCBDT";
+            std::string databdt_file = "TMVAClassification_DataBDT";
             mvares.result = DiphotonMva_->EvaluateMVA( "BDT" );
-            if( (mcbdt_file.compare( diphotonMVAweightfile_.fullPath() ) == 0) || (databdt_file.compare( diphotonMVAweightfile_.fullPath() ) == 0) ) {
+            if( (diphotonMVAweightfile_.fullPath().find(mcbdt_file) != std::string::npos) || (diphotonMVAweightfile_.fullPath().find(databdt_file) != std::string::npos) ) {
                 mvares.leadptom = dipho_lead_ptoM_;
                 mvares.subleadptom = dipho_sublead_ptoM_;
-                mvares.leadmva = dipho_leadIDMVA_;
-                mvares.subleadmva = dipho_subleadIDMVA_;
                 mvares.leadeta = leadEta_;
                 mvares.subleadeta = subleadEta_;
-                mvares.sigmarv = sigmaMrvoM_;
-                mvares.decorrSigmarv = sigmarv_decorr_;
-                mvares.sigmawv = sigmaMwvoM_;
                 mvares.CosPhi = cosphi_;
+                mvares.leadmva = dipho_leadIDMVA_;
+                mvares.subleadmva = dipho_subleadIDMVA_;
+                mvares.sigmarv = sigmaMrvoM_;
+                mvares.sigmawv = sigmaMwvoM_;
+                mvares.vtxprob = vtxprob_;
+                mvares.decorrSigmarv = sigmarv_decorr_;
             }else{
                 mvares.leadptom = leadptom_;
                 mvares.subleadptom = subleadptom_;
@@ -409,8 +408,8 @@ namespace flashgg {
                 mvares.decorrSigmarv = sigmarv_decorr_;
                 mvares.sigmawv = sigmawv_;
                 mvares.CosPhi = CosPhi_;
+                mvares.vtxprob = vtxprob_;
             }
-            mvares.vtxprob = vtxprob_;
 
             results->push_back( mvares );
         }

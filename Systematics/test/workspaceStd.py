@@ -377,6 +377,7 @@ if is_signal:
         systlabels += metsystlabels
     customizeSystematicsForSignal(process)
 elif customize.processId == "Data":
+    print "DATAAAAAAAAAAAAAAAAAAAAAa"
     print "Data, so turn off all shifts and systematics, with some exceptions"
     variablesToUse = minimalNonSignalVariables
     customizeSystematicsForData(process)
@@ -409,7 +410,8 @@ cloneTagSequenceForEachSystematic(process,systlabels,phosystlabels,metsystlabels
 
 # Dump an object called NoTag for untagged events in order to track QCD weights
 # Will be broken if it's done for non-central values, so turn this on only for the non-syst tag sorter
-process.flashggTagSorter.CreateNoTag = True # MUST be after tag sequence cloning
+#process.flashggTagSorter.CreateNoTag = True # MUST be after tag sequence cloning
+process.flashggTagSorter.CreateNoTag = False # Set to false to run correctly the PromptFakeFilter
 process.flashggTagSorter.isGluonFusion = cms.bool(bool(customize.processId.count("ggh")))
 process.flashggTagSorter.applyNNLOPSweight = cms.bool(customize.applyNNLOPSweight)
 
@@ -469,8 +471,8 @@ elif customize.doStageOne:
 else:
     tagList=[
         #["NoTag",0],
-#        ["UntaggedTag",1] #no categorization
-        ["UntaggedTag",4] #with categorization
+        ["UntaggedTag",1] #no categorization
+#        ["UntaggedTag",4] #with categorization
         #["VBFTag",3],
         #["ZHLeptonicTag",2],
         #["WHLeptonicTag",6],
@@ -584,11 +586,13 @@ if (customize.processId.count("qcd") or customize.processId.count("gjet")) and c
     if (customize.processId.count("promptfake")):
         process.PromptFakeFilter.doPromptFake = cms.bool(True)
         process.PromptFakeFilter.doFakeFake =cms.bool(False)
-        #process.PromptFakeFilter.doBoth =cms.bool(False)
+        process.PromptFakeFilter.doBoth =cms.bool(False)
+        print "workspaceStd = promptfake!"
     elif (customize.processId.count("fakefake")):
         process.PromptFakeFilter.doPromptFake =cms.bool(False)
         process.PromptFakeFilter.doFakeFake =cms.bool(True)
-        #process.PromptFakeFilter.doBoth =cms.bool(False)
+        process.PromptFakeFilter.doBoth =cms.bool(False)
+        print "workspaceStd = fakefake!"
     else:
         raise Exception,"Mis-configuration of python for prompt-fake filter"
 

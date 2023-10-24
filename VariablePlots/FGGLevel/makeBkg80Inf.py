@@ -1,4 +1,5 @@
 from ROOT import *
+import math
 
 #Argument Parser to input variable and range values
 import argparse
@@ -15,11 +16,11 @@ binhigh = args.binning[2]
 var = args.name
 
 #Bkg from 80 to Inf GeV
-mgg = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v3/output_DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
-gjLow = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v3/output_GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
-gjHigh = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v3/output_GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v1-v0-v0-RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v3-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
-qcdLow = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v3/output_QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV-pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
-qcdHigh = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v3/output_QCD_Pt-40ToInf_DoubleEMEnriched_MGG-80ToInf_TuneCP5_13TeV-pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
+mgg = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG80toInf_v2//output_DiPhotonJetsBox_MGG-80toInf_13TeV-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
+gjLow = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG80toInf_v2//output_GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
+gjHigh = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG80toInf_v2//output_GJet_Pt-40toInf_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v1-v0-v0-RunIISummer20UL18MiniAOD-106X_upgrade2018_realistic_v11_L1v1-v3-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
+qcdLow = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG80toInf_v2//output_QCD_Pt-30to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV-pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
+qcdHigh = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG80toInf_v2//output_QCD_Pt-40ToInf_DoubleEMEnriched_MGG-80ToInf_TuneCP5_13TeV-pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG80toInf_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
 
 mggt0 = mgg.Get("tagsDumper/trees/mgg_bkg_13TeV_UntaggedTag_0")
 mggt1 = mgg.Get("tagsDumper/trees/mgg_bkg_13TeV_UntaggedTag_1")
@@ -165,27 +166,27 @@ c1.cd()
 mgg80inf.SetFillColor(kRed)
 mgg80inf.SetLineColor(kBlack)
 mgg80inf.GetYaxis().SetTitle("Events Accepted")
-mgg80inf.SaveAs("mgg_80inf.root")
+mgg80inf.SaveAs("DataDriven/bkg_histos/mgg_80inf.root")
 
 gj80inf.SetFillColor(kBlue)
 gj80inf.SetLineColor(kBlack)
 gj80inf.GetYaxis().SetTitle("Events Accepted")
-gj80inf.SaveAs("gj_80inf.root")
+gj80inf.SaveAs("DataDriven/bkg_histos/gj_80inf.root")
 
 gjl80inf.SetFillColor(kBlue)
 gjl80inf.SetLineColor(kBlack)
 gjl80inf.GetYaxis().SetTitle("Events Accepted")
-gjl80inf.SaveAs("gj_low_80inf.root")
+gjl80inf.SaveAs("DataDriven/bkg_histos/gj_low_80inf.root")
 
 qcd80inf.SetFillColor(kYellow)
 qcd80inf.SetLineColor(kBlack)
 qcd80inf.GetYaxis().SetTitle("Events Accepted")
-qcd80inf.SaveAs("qcd_80inf.root")
+qcd80inf.SaveAs("DataDriven/bkg_histos/qcd_80inf.root")
 
 qcdl80inf.SetFillColor(kYellow)
 qcdl80inf.SetLineColor(kBlack)
 qcdl80inf.GetYaxis().SetTitle("Events Accepted")
-qcdl80inf.SaveAs("qcd_low_80inf.root")
+qcdl80inf.SaveAs("DataDriven/bkg_histos/qcd_low_80inf.root")
 
 print("MGG: ",mgg80inf.Integral())
 print("GJet: ",gj80inf.Integral())

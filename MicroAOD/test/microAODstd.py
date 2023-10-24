@@ -20,37 +20,21 @@ import os
 process.GlobalTag = GlobalTag(process.GlobalTag, '' , '')
 #process.source = cms.Source("PoolSource",
 
+###############
 # Legacy 2018 #
-#                             fileNames=cms.untracked.vstring("/store/mc/RunIIAutumn18MiniAOD/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/00000/1359F11B-F51C-4F47-8D70-8CFC55E77A64.root"))
-#                             fileNames=cms.untracked.vstring("/store/mc/RunIIAutumn18MiniAOD/DiPhotonJetsBox_M40_80-Sherpa/MINIAODSIM/102X_upgrade2018_realistic_v15_ext1-v1/00000/042DFFF7-80E4-E04D-B9F7-DE117C3BA50A.root",
-#                                                             "/store/mc/RunIIAutumn18MiniAOD/DiPhotonJetsBox_M40_80-Sherpa/MINIAODSIM/102X_upgrade2018_realistic_v15_ext1-v1/00000/1C95D4F9-16C2-734C-A27D-8E4DA3546E10.root",
-#                                                             "/store/mc/RunIIAutumn18MiniAOD/DiPhotonJetsBox_M40_80-Sherpa/MINIAODSIM/102X_upgrade2018_realistic_v15_ext1-v1/00000/15C2B929-9CEF-F54D-9C1D-F392F7E8F131.root",
-#                                                             "/store/mc/RunIIAutumn18MiniAOD/DiPhotonJetsBox_M40_80-Sherpa/MINIAODSIM/102X_upgrade2018_realistic_v15_ext1-v1/00000/207FF7E5-7843-B943-927B-A1086E997D66.root"))
+###############
+# fileNames=cms.untracked.vstring("/store/mc/RunIIAutumn18MiniAOD/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/102X_upgrade2018_realistic_v15-v1/00000/1359F11B-F51C-4F47-8D70-8CFC55E77A64.root"))
 
+##########
 # UL2018 #
-#                             fileNames=cms.untracked.vstring("/store/mc/RunIISummer20UL18MiniAODv2/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/40000/ED2522A0-D644-1E41-BCCE-55DD7B12053A.root","))
-#                             fileNames=cms.untracked.vstring("/store/mc/RunIISummer20UL18MiniAODv2/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v1/2430000/5326E7F7-2C04-F84F-932F-85644569548C.root","))
-#
-#                             fileNames=cms.untracked.vstring("/store/mc/RunIISummer16MiniAODv3/VBFHToGG_M125_13TeV_amcatnlo_pythia8_v2/MINIAODSIM/PUMoriond17_94X_mcRun2_asymptotic_v3-v1/50000/38128C3C-892D-E911-AC8E-008CFA0087C4.root","))
-#    process.GlobalTag = GlobalTag(process.GlobalTag,'80X_dataRun2_2016LegacyRepro_v4','')
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/data/Run2016B/SingleElectron/MINIAOD/07Aug17_ver1-v1/110000/0248293E-578B-E711-A639-44A842CFC9D9.root","))
+##########
+# fileNames=cms.untracked.vstring("/store/mc/RunIISummer20UL18MiniAODv2/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v2/40000/ED2522A0-D644-1E41-BCCE-55DD7B12053A.root"))
+  fileNames=cms.untracked.vstring("/store/mc/RunIISummer20UL18MiniAODv2/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/MINIAODSIM/106X_upgrade2018_realistic_v16_L1v1-v1/2430000/5326E7F7-2C04-F84F-932F-85644569548C.root"))
 
-# 2017 #
-#    process.GlobalTag = GlobalTag(process.GlobalTag,'','')
-#    process.source = cms.Source("PoolSource",
-#                             fileNames=cms.untracked.vstring("/store/mc/RunIIFall17MiniAODv2/GluGluHToGG_M-125_13TeV_powheg_pythia8/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/40000/0866D1A8-1941-E811-B61F-0CC47AF9B2E6.root","))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring('/store/mc/RunIISummer16MiniAODv2/GluGluHToGG_M-125_13TeV_powheg_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/60000/024E4FA3-8BBC-E611-8E3D-00266CFFBE88.root",'))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring('root://eoscms.cern.ch//eos/cms/store/mc/RunIIFall17MiniAOD/GJet_Pt-20to40_DoubleEMEnriched_MGG-80toInf_TuneCP5_13TeV_Pythia8/MINIAODSIM/94X_mc2017_realistic_v10-v1/40000/4A2ACB0A-1BD9-E711-AF54-141877410316.root",'))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring('root://eoscms.cern.ch//eos/cms/store/mc/RunIIFall17MiniAOD/GluGluToHHTo2B2G_node_SM_13TeV-madgraph/MINIAODSIM/94X_mc2017_realistic_v10-v1/00000/2E0E165D-8E05-E811-909C-FA163E80AE1F.root'))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring('file:/afs/cern.ch/user/s/sethzenz/work/public/GluGluHToGG_M125_13TeV_amcatnloFXFX_pythia8_94X_mc2017_realistic_v10-v1.root'))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/mc/RunIIFall17MiniAODv2/THQ_ctcvcp_HToGG_M125_13TeV-madgraph-pythia8_TuneCP5/MINIAODSIM/PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/90000/6E58A5DD-BF43-E811-8946-0023AEEEB538.root"))
-
-# 2018 #
-#    process.GlobalTag = GlobalTag(process.GlobalTag,'100X_upgrade2018_realistic_v10','')
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/data/Run2018B/DoubleMuon/MINIAOD/PromptReco-v1/000/317/080/00000/4E78B565-8464-E811-BF54-02163E01A0FC.root"))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/data/Run2018D/EGamma/MINIAOD/PromptReco-v2/000/322/106/00000/9A1C4C91-1EB3-E811-A238-02163E0150CE.root"))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/data/Run2018D/DoubleMuon/MINIAOD/PromptReco-v2/000/320/673/00000/0A83E8DF-EB97-E811-AE18-FA163E192E5D.root"))
-#    process.source = cms.Source("PoolSource",fileNames=cms.untracked.vstring("/store/mc/RunIISpring18MiniAOD/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/MINIAODSIM/100X_upgrade2018_realistic_v10-v2/10000/F24C5C06-FF47-E811-9C2F-FA163EC3CAD1.root"))
+process.RandomNumberGeneratorService = cms.Service("RandomNumberGeneratorService")
+process.RandomNumberGeneratorService.flashggRandomizedPhotons = cms.PSet(
+          initialSeed = cms.untracked.uint32(16253245)
+        )
 
 #process.GlobalTag = GlobalTag(process.GlobalTag,'92X_upgrade2017_realistic_v10','')
 #process.source.fileNames=cms.untracked.vstring("/store/mc/RunIISummer17MiniAOD/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/MINIAODSIM/92X_upgrade2017_realistic_v10_ext1-v2/10000/00F9D855-E293-E711-B625-02163E014200.root")

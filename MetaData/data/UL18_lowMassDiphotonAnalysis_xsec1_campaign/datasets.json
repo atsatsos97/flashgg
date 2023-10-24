@@ -1,0 +1,862 @@
+{
+    "/GluGluHToGG_M10_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M10_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_230235/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 2912
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M10_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_230235/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 24757
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M10_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_230235/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 24701
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M10_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_230235/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 24707
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M10_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_230235/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 21849
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M15_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M15_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_230431/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 2006
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M15_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_230431/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 2044
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M15_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_230431/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 23102
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M15_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_230431/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 25108
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M15_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_230431/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 25154
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M15_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_230431/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 20963
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 4951
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_16.root", 
+                "nevents": 4557
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_22.root", 
+                "nevents": 5653
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_24.root", 
+                "nevents": 8928
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 563
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_27.root", 
+                "nevents": 1663
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 554
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_21.root", 
+                "nevents": 2239
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_12.root", 
+                "nevents": 604
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_15.root", 
+                "nevents": 1153
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_18.root", 
+                "nevents": 3911
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_23.root", 
+                "nevents": 1739
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_26.root", 
+                "nevents": 564
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_9.root", 
+                "nevents": 6872
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_11.root", 
+                "nevents": 583
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_14.root", 
+                "nevents": 3475
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 585
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 2845
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_19.root", 
+                "nevents": 1147
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_20.root", 
+                "nevents": 2275
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_8.root", 
+                "nevents": 2877
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 3918
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_13.root", 
+                "nevents": 13126
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_25.root", 
+                "nevents": 545
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_10.root", 
+                "nevents": 557
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_17.root", 
+                "nevents": 507
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M20_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_230623/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 24686
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_9.root", 
+                "nevents": 3483
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 2317
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_17.root", 
+                "nevents": 2286
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 2941
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_26.root", 
+                "nevents": 2928
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_20.root", 
+                "nevents": 1760
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 1187
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 3511
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_14.root", 
+                "nevents": 5924
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_22.root", 
+                "nevents": 2361
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_15.root", 
+                "nevents": 1773
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 606
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_11.root", 
+                "nevents": 1147
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_21.root", 
+                "nevents": 567
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_18.root", 
+                "nevents": 1764
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_27.root", 
+                "nevents": 1156
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 1177
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_25.root", 
+                "nevents": 555
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 597
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_8.root", 
+                "nevents": 560
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_10.root", 
+                "nevents": 583
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_13.root", 
+                "nevents": 14871
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_16.root", 
+                "nevents": 600
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_19.root", 
+                "nevents": 14906
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_12.root", 
+                "nevents": 24496
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_24.root", 
+                "nevents": 6509
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M25_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v4/221005_230812/0000/myMicroAODOutputFile_23.root", 
+                "nevents": 1193
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231004/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 3068
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231004/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 1980
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231004/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 24653
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231004/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 23787
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231004/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 24697
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M30_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231004/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 24644
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_17.root", 
+                "nevents": 4615
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 7453
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 3931
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_20.root", 
+                "nevents": 1132
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_10.root", 
+                "nevents": 1192
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 4491
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_23.root", 
+                "nevents": 3331
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_19.root", 
+                "nevents": 3943
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_12.root", 
+                "nevents": 544
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_16.root", 
+                "nevents": 576
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_14.root", 
+                "nevents": 547
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 1681
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_9.root", 
+                "nevents": 575
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 1133
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_22.root", 
+                "nevents": 2809
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 2239
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_11.root", 
+                "nevents": 2243
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 6305
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_21.root", 
+                "nevents": 540
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_15.root", 
+                "nevents": 1743
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_8.root", 
+                "nevents": 1709
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_18.root", 
+                "nevents": 7383
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M35_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231155/0000/myMicroAODOutputFile_13.root", 
+                "nevents": 3407
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231347/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 21081
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231347/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 24969
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231347/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 1945
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231347/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 1977
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231347/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 2031
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231347/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 24111
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M40_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_231347/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 24109
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_9.root", 
+                "nevents": 1200
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 571
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 1139
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 1695
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_8.root", 
+                "nevents": 3949
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 572
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 2238
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 5614
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M45_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231541/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 6178
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_231737/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 24294
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_231737/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 6097
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_231737/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 5965
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_231737/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 24166
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_231737/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 24110
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_231737/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 15073
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M50_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_231737/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 1047
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_14.root", 
+                "nevents": 553
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_23.root", 
+                "nevents": 1715
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_11.root", 
+                "nevents": 1134
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 567
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_19.root", 
+                "nevents": 560
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_13.root", 
+                "nevents": 1710
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_15.root", 
+                "nevents": 2339
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_16.root", 
+                "nevents": 1179
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 2305
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 562
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 586
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_24.root", 
+                "nevents": 2325
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_22.root", 
+                "nevents": 10769
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 139
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_9.root", 
+                "nevents": 1102
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_8.root", 
+                "nevents": 2259
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_12.root", 
+                "nevents": 1142
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 553
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 1118
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_20.root", 
+                "nevents": 24954
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_21.root", 
+                "nevents": 24898
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_10.root", 
+                "nevents": 5622
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_17.root", 
+                "nevents": 2857
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_18.root", 
+                "nevents": 2821
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M55_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/221005_231931/0000/myMicroAODOutputFile_25.root", 
+                "nevents": 6812
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M5_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M5_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232123/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 18077
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M5_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232123/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 24986
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M5_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232123/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 2001
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M5_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232123/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 6051
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M5_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232123/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 25067
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M5_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232123/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 24044
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M60_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M60_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232314/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 24979
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M60_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232314/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 24873
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M60_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232314/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 25012
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M60_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232314/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 2005
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M60_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232314/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 1959
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M60_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232314/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 21004
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 24151
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_16.root", 
+                "nevents": 13126
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_13.root", 
+                "nevents": 9872
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_20.root", 
+                "nevents": 11942
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_9.root", 
+                "nevents": 24313
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_8.root", 
+                "nevents": 2105
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 24129
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 3224
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_21.root", 
+                "nevents": 3306
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_15.root", 
+                "nevents": 3303
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_22.root", 
+                "nevents": 3300
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_18.root", 
+                "nevents": 3317
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_10.root", 
+                "nevents": 2228
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_11.root", 
+                "nevents": 6597
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 24187
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_19.root", 
+                "nevents": 24278
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_12.root", 
+                "nevents": 12054
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 23995
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 3301
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_17.root", 
+                "nevents": 3278
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_14.root", 
+                "nevents": 3298
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M65_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/221005_232506/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 3326
+            }
+        ], 
+        "parent_n_units": null
+    }, 
+    "/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/elfontan-UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1-82689a8dd9f3f8660dbba0021defef47/USER": {
+        "dset_type": "mc", 
+        "files": [
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_7.root", 
+                "nevents": 11367
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_18.root", 
+                "nevents": 22961
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_6.root", 
+                "nevents": 14253
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_10.root", 
+                "nevents": 2791
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_8.root", 
+                "nevents": 24825
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_9.root", 
+                "nevents": 14242
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_13.root", 
+                "nevents": 5669
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_4.root", 
+                "nevents": 2881
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_3.root", 
+                "nevents": 5734
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_5.root", 
+                "nevents": 2851
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_2.root", 
+                "nevents": 2872
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_12.root", 
+                "nevents": 5711
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_17.root", 
+                "nevents": 11506
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_11.root", 
+                "nevents": 5686
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_1.root", 
+                "nevents": 11297
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_16.root", 
+                "nevents": 6701
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_14.root", 
+                "nevents": 11297
+            }, 
+            {
+                "name": "/store/user/elfontan/UL18_lowMassDiphotonAnalysis_xsec1_campaign/v0/GluGluHToGG_M70_TuneCP5_13TeV-amcatnloFXFX-pythia8/UL18_lowMassDiphotonAnalysis_xsec1_campaign-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/221005_232658/0000/myMicroAODOutputFile_15.root", 
+                "nevents": 24646
+            }
+        ], 
+        "parent_n_units": null
+    }
+}

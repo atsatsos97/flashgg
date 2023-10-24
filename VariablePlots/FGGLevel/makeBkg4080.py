@@ -1,4 +1,5 @@
 from ROOT import *
+import math
 
 #Argument Parser to input variable and range values
 import argparse
@@ -15,9 +16,9 @@ binhigh = args.binning[2]
 var = args.name
 
 #Bkg from 40 to 80 GeV
-mgg = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2/output_DiPhotonJetsBox_M40_80-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
-gj = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2/output_GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
-qcd = TFile("/afs/cern.ch/work/a/atsatsos/ULLowmassFGG/CMSSW_10_6_8/src/flashgg/Systematics/test/UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2/output_QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV-pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
+mgg = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG40to80_v2/output_DiPhotonJetsBox_M40_80-sherpa_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v1-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-bf7acd40472d4982996c4dd60309cd6d_USER.root","READ")
+gj = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG40to80_v2/output_GJet_Pt-20toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV_Pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
+qcd = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/UL18_BkgMC_MGG40to80_v2/output_QCD_Pt-30toInf_DoubleEMEnriched_MGG-40to80_TuneCP5_13TeV-pythia8_atsatsos-UL18_VLowMassDiphoton_BkgMC_MGG40to80_v2-v0-v0-RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2-3fc41d6a5cdc2b7d1e5534c778de39cd_USER.root","READ")
 
 mggt0 = mgg.Get("tagsDumper/trees/mgg_bkg_13TeV_UntaggedTag_0")
 mggt1 = mgg.Get("tagsDumper/trees/mgg_bkg_13TeV_UntaggedTag_1")
@@ -110,17 +111,17 @@ c1.cd()
 mgg4080.SetFillColor(kRed)
 mgg4080.SetLineColor(kBlack)
 mgg4080.GetYaxis().SetTitle("Events Accepted")
-mgg4080.SaveAs("mgg_4080.root")
+mgg4080.SaveAs("DataDriven/bkg_histos/mgg_4080.root")
 
 gj4080.SetFillColor(kBlue)
 gj4080.SetLineColor(kBlack)
 gj4080.GetYaxis().SetTitle("Events Accepted")
-gj4080.SaveAs("gj_4080.root")
+gj4080.SaveAs("DataDriven/bkg_histos/gj_4080.root")
 
 qcd4080.SetFillColor(kYellow)
 qcd4080.SetLineColor(kBlack)
 qcd4080.GetYaxis().SetTitle("Events Accepted")
-qcd4080.SaveAs("qcd_4080.root")
+qcd4080.SaveAs("DataDriven/bkg_histos/qcd_4080.root")
 
 print("MGG: ",mgg4080.Integral())
 print("GJet: ",gj4080.Integral())
