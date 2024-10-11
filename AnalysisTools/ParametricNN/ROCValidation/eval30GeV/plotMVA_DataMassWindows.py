@@ -3,7 +3,8 @@ import CMS_lumi
 
 lmf = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/NewReleaseFiles/Feb2024_LowMassBDT_MassHypInput/EGamma_Summer20UL.root","READ")
 #pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/out_all2018Data_bkg_newSamples.root","READ")
-pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/nearest_flat/out_all2018Data_bkg_newSamplesFlat.root","READ")
+#pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/nearest_flat/out_all2018Data_bkg_newSamplesFlat.root","READ")
+pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/nearest_flat_evaluateAt30GeV/out_all2018Data_bkg_newSamplesFlat.root","READ")
 
 lmt0 = lmf.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_0")
 pnrt0 = pnrf.Get("tagsDumper/trees/Data_13TeV_UntaggedTag_0")

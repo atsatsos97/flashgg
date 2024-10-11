@@ -17,19 +17,19 @@ for i in range(10,75,5):
   pnr_Int.SetPoint(0,1.0,0.0)
 
   #Obtain MVA histogram files for signal at different mass points and background at different sliding windows
-  lm_sigfile = TFile("output/lm"+str(i)+".root","READ")
-  pnr_sigfile = TFile("output/pnr"+str(i)+".root","READ")
+  lm_sigfile = TFile("output/pnr"+str(i)+".root","READ")
+  pnr_sigfile = TFile("output_eval30GeV/pnr"+str(i)+".root","READ")
 
-  lm_sighist = lm_sigfile.Get("lmr")
+  lm_sighist = lm_sigfile.Get("pnrr")
   pnr_sighist = pnr_sigfile.Get("pnrr")
 
   lm_sigeffden = lm_sighist.Integral()
   pnr_sigeffden = pnr_sighist.Integral()
 
-  lm_bkgfile = TFile("output/lm"+str(i)+"data.root","READ")
-  pnr_bkgfile = TFile("output/pnr"+str(i)+"data.root","READ")
+  lm_bkgfile = TFile("output/pnr"+str(i)+"data.root","READ")
+  pnr_bkgfile = TFile("output_eval30GeV/pnr"+str(i)+"data.root","READ")
 
-  lm_bkghist = lm_bkgfile.Get("lmr")
+  lm_bkghist = lm_bkgfile.Get("pnrr")
   pnr_bkghist = pnr_bkgfile.Get("pnrr")
 
   lm_bkgrejden = lm_bkghist.Integral()
@@ -92,8 +92,8 @@ for i in range(10,75,5):
   leg.SetHeader(str(i)+" GeV Mass Hypothesis","C")
   leg.SetTextSize(0.032)
   leg.SetBorderSize(0)
-  leg.AddEntry(lm_ROC,"HIG 20-002 BDT AUC = "+str(round(lm_Int.Integral(),3)))
-  leg.AddEntry(pnr_ROC,"Parametric NN AUC = "+str(round(pnr_Int.Integral(),3)))
+  leg.AddEntry(lm_ROC,"Current PNN AUC = "+str(round(lm_Int.Integral(),3)))
+  leg.AddEntry(pnr_ROC,"PNN Evaluated at 30 GeV AUC = "+str(round(pnr_Int.Integral(),3)))
   leg.Draw("same")
 
   c1.Update()
@@ -110,5 +110,5 @@ for i in range(10,75,5):
 #  c1.Update()
 
   c1.cd()
-  c1.SaveAs("output/ROC_M"+str(i)+".png")
-  c1.SaveAs("output/ROC_M"+str(i)+".pdf")
+  c1.SaveAs("output_eval30GeV/ROC_M"+str(i)+"_PNN30Comp.png")
+  c1.SaveAs("output_eval30GeV/ROC_M"+str(i)+"_PNN30Comp.pdf")

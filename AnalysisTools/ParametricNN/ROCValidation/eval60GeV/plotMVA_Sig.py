@@ -5,7 +5,8 @@ for i in range(10,75,5):
   #Signal
   lmf = TFile("/eos/user/a/atsatsos/ULFlashGG_Files/NewReleaseFiles/Feb2024_LowMassBDT_MassHypInput/ggh_M"+str(i)+".root","READ")
 #  pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/out_ggH_M"+str(i)+"_newSamples.root","READ")
-  pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/nearest_flat/out_ggH_M"+str(i)+"_newSamplesFlat.root","READ")
+#  pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/nearest_flat/out_ggH_M"+str(i)+"_newSamplesFlat.root","READ")
+  pnrf = TFile("/eos/user/e/elfontan/DiPhotonAnalysis/diphotonBDT/NTUPLES_May2024/nearest_flat_evaluateAt60GeV/out_ggH_M"+str(i)+"_newSamplesFlat.root","READ")
 
   lmt0 = lmf.Get("tagsDumper/trees/ggh_"+str(i)+"_13TeV_UntaggedTag_0")
   pnrt0 = pnrf.Get("tagsDumper/trees/ggh_"+str(i)+"_13TeV_UntaggedTag_0")
