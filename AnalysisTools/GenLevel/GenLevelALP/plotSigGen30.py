@@ -46,6 +46,12 @@ genalp.SetMinimum(0.0)
 genalp.SetLineColor(kViolet-6)
 genalp.Draw("histsame")
 
+alpjfile = TFile(var+"/gen_alpj30.root", "READ")
+genalpj = alpjfile.Get("gen"+var.lower()+"alpj")
+genalpj.SetMinimum(0.0)
+genalpj.SetLineColor(kAzure)
+genalpj.Draw("histsame")
+
 gghfileacc = TFile(var+"/gen_ggh30acc.root", "READ")
 gengghacc = gghfileacc.Get("gen"+var.lower()+"gghacc")
 gengghacc.SetMinimum(0.0)
@@ -59,6 +65,13 @@ genalpacc.SetMinimum(0.0)
 genalpacc.SetLineColor(kViolet-4)
 genalpacc.SetLineStyle(2)
 genalpacc.Draw("histsame")
+
+alpjfileacc = TFile(var+"/gen_alpj30acc.root", "READ")
+genalpjacc = alpjfileacc.Get("gen"+var.lower()+"alpjacc")
+genalpjacc.SetMinimum(0.0)
+genalpjacc.SetLineColor(kAzure-4)
+genalpjacc.SetLineStyle(2)
+genalpjacc.Draw("histsame")
 
 if (var=="DR"):
   cat03 = TLine(0.3,0.0,0.3,3000.0)
@@ -75,15 +88,20 @@ leg.SetHeader("30 GeV BSM Models","C")
 if (var=="DR"):
   leg.AddEntry(genggh,"ggH: "+str(np.round(genggh.Integral(0,12)/genggh.Integral()*100,2))+"% events with dR < 0.3","l")
   leg.AddEntry(genalp,"ALP: "+str(np.round(genalp.Integral(0,12)/genalp.Integral()*100,2))+"% events with dR < 0.3","l")
+  leg.AddEntry(genalpj,"ALP+Jet: "+str(np.round(genalpj.Integral(0,12)/genalpj.Integral()*100,2))+"% events with dR < 0.3","l")
   leg.AddEntry(gengghacc,"ggH: "+str(round(gengghacc.Integral()/genggh.Integral()*100,2))+"% in Acceptance Region and","l")
   leg.AddEntry(0,str(np.round(gengghacc.Integral(0,12)/gengghacc.Integral()*100,2))+"% in Acceptance Region with dR < 0.3","")
   leg.AddEntry(genalpacc,"ALP: "+str(round(genalpacc.Integral()/genalp.Integral()*100,2))+"% in Acceptance Region and","l")
   leg.AddEntry(0,str(np.round(genalpacc.Integral(0,12)/genalpacc.Integral()*100,2))+"% in Acceptance Region with dR < 0.3","")
+  leg.AddEntry(genalpjacc,"ALP+Jet: "+str(round(genalpjacc.Integral()/genalpj.Integral()*100,2))+"% in Acceptance Region and","l")
+  leg.AddEntry(0,str(np.round(genalpjacc.Integral(0,12)/genalpjacc.Integral()*100,2))+"% in Acceptance Region with dR < 0.3","")
 else:
   leg.AddEntry(genggh,"ggH at Gen Level")
   leg.AddEntry(genalp,"ALP at Gen Level")
+  leg.AddEntry(genalpj,"ALP+Jet at Gen Level")
   leg.AddEntry(gengghacc,"ggH: "+str(round(gengghacc.Integral()/genggh.Integral()*100,2))+"% in Acceptance Region")
   leg.AddEntry(genalpacc,"ALP: "+str(round(genalpacc.Integral()/genalp.Integral()*100,2))+"% in Acceptance Region")
+  leg.AddEntry(genalpjacc,"ALP+Jet: "+str(round(genalpjacc.Integral()/genalpj.Integral()*100,2))+"% in Acceptance Region")
 leg.Draw("same")
 
 #CMS lumi stuff
@@ -97,21 +115,25 @@ CMS_lumi.relPosX = 0.12
 CMS_lumi.CMS_lumi(c1, 0, 0)
 
 c1.Update()
-c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_gen_"+var.lower()+"_30gev.png")
-c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_gen_"+var.lower()+"_30gev.pdf")
+c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_genggj_"+var.lower()+"_30gev.png")
+c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_genggj_"+var.lower()+"_30gev.pdf")
 
 genggh.SetMinimum(0.1)
 gengghacc.SetMinimum(0.1)
 genalp.SetMinimum(0.1)
 genalpacc.SetMinimum(0.1)
+genalpj.SetMinimum(0.1)
+genalpjacc.SetMinimum(0.1)
 
 genggh.SetMaximum(10000000)
 gengghacc.SetMaximum(10000000)
 genalp.SetMaximum(10000000)
 genalpacc.SetMaximum(10000000)
+genalpj.SetMaximum(10000000)
+genalpjacc.SetMaximum(10000000)
 
 c1.Update()
 c1.SetLogy()
-c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_gen_"+var.lower()+"_30gev_log.png")
-c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_gen_"+var.lower()+"_30gev_log.pdf")
+c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_genggj_"+var.lower()+"_30gev_log.png")
+c1.SaveAs("/eos/user/a/atsatsos/www/ALPMCDistributions_DEC2024/sig_genggj_"+var.lower()+"_30gev_log.pdf")
 

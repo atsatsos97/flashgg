@@ -1,4 +1,4 @@
-# Gen Plots - done for ggh but need to edit for ALP!!
+# Gen Plots
 
 # import ROOT in batch mode
 import numpy as np
@@ -35,7 +35,6 @@ gen, genLabel = Handle("GenEventInfoProduct"), ("generator")
 handlePruned, prunedLabel  = Handle("std::vector<reco::GenParticle>"), ("prunedGenParticles")
 
 #Making Histograms
-
 #ggh
 eventsggh = Events(gghfiles30)
 
@@ -121,8 +120,6 @@ gendiphotonptalpacc = TH1F("gendiphotonptalpacc","gendiphotonptalpacc", 200,0,40
 gendralp = TH1F("gendralp","gendralp", 200,0,5); gendralp.Sumw2()
 gendralpacc = TH1F("gendralpacc","gendralpacc", 200,0,5); gendralpacc.Sumw2()
 
-
-
 for i,event in enumerate(eventsalp):
   if (i%1000==0): print(i)
   if (i==300000): break
@@ -169,7 +166,71 @@ for i,event in enumerate(eventsalp):
           gensubleadetaalpacc.Fill(pho[0].Eta())
 
 
-#parser.add_argument('--name', type=str, help='name of variable as directory folder',choices=['LeadEta', 'SubleadEta', 'LeadPT', 'SubleadPT', 'DiphotonPT', 'DR'])
+#alpj
+eventsalpj = Events(alpjfiles30)
+
+genalpj = TH1F("genalpj","genalpj", 200,0,5); genalpj.Sumw2()
+genalpjacc = TH1F("genalpjacc","genalpjacc", 200,0,5); genalpjacc.Sumw2()
+
+genleadetaalpj = TH1F("genleadetaalpj","genleadetaalpj", 180,-6,6); genleadetaalpj.Sumw2()
+genleadetaalpjacc = TH1F("genleadetaalpjacc","genleadetaalpjacc", 180,-6,6); genleadetaalpjacc.Sumw2()
+gensubleadetaalpj = TH1F("gensubleadetaalpj","gensubleadetaalpj", 180,-6,6); gensubleadetaalpj.Sumw2()
+gensubleadetaalpjacc = TH1F("gensubleadetaalpjacc","gensubleadetaalpjacc", 180,-6,6); gensubleadetaalpjacc.Sumw2()
+
+genleadptalpj = TH1F("genleadptalpj","genleadptalpj", 200,0,200); genleadptalpj.Sumw2()
+genleadptalpjacc = TH1F("genleadptalpjacc","genleadptalpjacc", 200,0,200); genleadptalpjacc.Sumw2()
+gensubleadptalpj = TH1F("gensubleadptalpj","gensubleadptalpj", 200,0,200); gensubleadptalpj.Sumw2()
+gensubleadptalpjacc = TH1F("gensubleadptalpjacc","gensubleadptalpjacc", 200,0,200); gensubleadptalpjacc.Sumw2()
+
+gendiphotonptalpj = TH1F("gendiphotonptalpj","gendiphotonptalpj", 200,0,400); gendiphotonptalpj.Sumw2()
+gendiphotonptalpjacc = TH1F("gendiphotonptalpjacc","gendiphotonptalpjacc", 200,0,400); gendiphotonptalpjacc.Sumw2()
+gendralpj = TH1F("gendralpj","gendralpj", 200,0,5); gendralpj.Sumw2()
+gendralpjacc = TH1F("gendralpjacc","gendralpjacc", 200,0,5); gendralpjacc.Sumw2()
+
+for i,event in enumerate(eventsalpj):
+  if (i%1000==0): print(i)
+  if (i==300000): break
+  event.getByLabel(prunedLabel, handlePruned)
+  event.getByLabel(genLabel, gen)
+
+  if (gen.product().weight() != 0.0): w = 1.0
+  pruned = handlePruned.product()
+
+  npho=0;
+  pho={}
+  phom=TLorentzVector(0,0,0,0)
+
+  for p in pruned:
+    if (abs(p.pdgId())==22 and p.status()==1):
+      pho[npho]=TLorentzVector(p.px(),p.py(),p.pz(),p.energy())
+      npho+=1
+
+  if npho>=2:
+    phom = pho[0]+pho[1]
+    phodr = np.sqrt((pho[0].Eta()-pho[1].Eta())*(pho[0].Eta()-pho[1].Eta())+(pho[0].Phi()-pho[1].Phi())*(pho[0].Phi()-pho[1].Phi()))
+    if(abs(pho[0].Phi()-pho[1].Phi()) > np.pi): phodr = np.sqrt( (pho[0].Eta()-pho[1].Eta())*(pho[0].Eta()-pho[1].Eta()) + (2*np.pi-(pho[0].Phi()-pho[1].Phi()))*(2*np.pi-(pho[0].Phi()-pho[1].Phi())) )
+    gendralpj.Fill(phodr,w)
+    gendiphotonptalpj.Fill(phom.Pt(),w)
+    genleadptalpj.Fill(max(pho[0].Pt(),pho[1].Pt()),w)
+    gensubleadptalpj.Fill(min(pho[0].Pt(),pho[1].Pt()),w)
+    if (pho[0].Pt() > pho[1].Pt()):
+      genleadetaalpj.Fill(pho[0].Eta())
+      gensubleadetaalpj.Fill(pho[1].Eta())
+    else:
+      genleadetaalpj.Fill(pho[1].Eta())
+      gensubleadetaalpj.Fill(pho[0].Eta())
+    if ((pho[0].Pt()>30.0 and pho[1].Pt()>18.0) or (pho[0].Pt()>18.0 and pho[1].Pt()>30.0)):
+      if (abs(pho[0].Eta())<2.5 and abs(pho[1].Eta())<2.5):
+        gendralpjacc.Fill(phodr,w)
+        gendiphotonptalpjacc.Fill(phom.Pt(),w)
+        genleadptalpjacc.Fill(max(pho[0].Pt(),pho[1].Pt()),w)
+        gensubleadptalpjacc.Fill(min(pho[0].Pt(),pho[1].Pt()),w)
+        if (pho[0].Pt() > pho[1].Pt()):
+          genleadetaalpjacc.Fill(pho[0].Eta())
+          gensubleadetaalpjacc.Fill(pho[1].Eta())
+        else:
+          genleadetaalpjacc.Fill(pho[1].Eta())
+          gensubleadetaalpjacc.Fill(pho[0].Eta())
 
 genleadetaggh.SaveAs("LeadEta/gen_ggh30.root")
 gensubleadetaggh.SaveAs("SubleadEta/gen_ggh30.root")
@@ -198,3 +259,17 @@ genleadptalpacc.SaveAs("LeadPT/gen_alp30acc.root")
 gensubleadptalpacc.SaveAs("SubleadPT/gen_alp30acc.root")
 gendiphotonptalpacc.SaveAs("DiphotonPT/gen_alp30acc.root")
 gendralpacc.SaveAs("DR/gen_alp30acc.root")
+
+genleadetaalpj.SaveAs("LeadEta/gen_alpj30.root")
+gensubleadetaalpj.SaveAs("SubleadEta/gen_alpj30.root")
+genleadptalpj.SaveAs("LeadPT/gen_alpj30.root")
+gensubleadptalpj.SaveAs("SubleadPT/gen_alpj30.root")
+gendiphotonptalpj.SaveAs("DiphotonPT/gen_alpj30.root")
+gendralpj.SaveAs("DR/gen_alpj30.root")
+
+genleadetaalpjacc.SaveAs("LeadEta/gen_alpj30acc.root")
+gensubleadetaalpjacc.SaveAs("SubleadEta/gen_alpj30acc.root")
+genleadptalpjacc.SaveAs("LeadPT/gen_alpj30acc.root")
+gensubleadptalpjacc.SaveAs("SubleadPT/gen_alpj30acc.root")
+gendiphotonptalpjacc.SaveAs("DiphotonPT/gen_alpj30acc.root")
+gendralpjacc.SaveAs("DR/gen_alpj30acc.root")
