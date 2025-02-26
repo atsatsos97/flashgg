@@ -36,7 +36,7 @@ handlePruned, prunedLabel  = Handle("std::vector<reco::GenParticle>"), ("prunedG
 
 #Making Histograms
 #ggh
-eventsggh = Events(gghfiles60)
+eventsggh = Events(gghfiles70)
 
 genleadetaggh = TH1F("genleadetaggh","genleadetaggh", 180,-6,6); genleadetaggh.Sumw2()
 genleadetagghacc = TH1F("genleadetagghacc","genleadetagghacc", 180,-6,6); genleadetagghacc.Sumw2()
@@ -53,15 +53,16 @@ gendiphotonptgghacc = TH1F("gendiphotonptgghacc","gendiphotonptgghacc", 200,0,40
 gendrggh = TH1F("gendrggh","gendrggh", 200,0,5); gendrggh.Sumw2()
 gendrgghacc = TH1F("gendrgghacc","gendrgghacc", 200,0,5); gendrgghacc.Sumw2()
 
-genmassggh = TH1F("genmassggh","genmassggh", 200,59.75,60.25); genmassggh.Sumw2()
-genmassgghacc = TH1F("genmassgghacc","genmassgghacc", 200,59.75,60.25); genmassgghacc.Sumw2()
+genmassggh = TH1F("genmassggh","genmassggh", 200,69.75,70.25); genmassggh.Sumw2()
+genmassgghacc = TH1F("genmassgghacc","genmassgghacc", 200,69.75,70.25); genmassgghacc.Sumw2()
 
 
 for i,event in enumerate(eventsggh):
   if (i%1000==0): print(i)
-  if (i==80000): break
+  if (i==175000): break
   event.getByLabel(prunedLabel, handlePruned)
   event.getByLabel(genLabel, gen)
+  if (i%1000==0): print(gen.product().weight())
 
   if (gen.product().weight() > 0.0): w = 1.0
   elif (gen.product().weight() < 0.0): w = -1.0
@@ -107,7 +108,7 @@ for i,event in enumerate(eventsggh):
 
 
 #alp
-eventsalp = Events(alpfiles60)
+eventsalp = Events(alpfiles70)
 
 genalp = TH1F("genalp","genalp", 200,0,5); genalp.Sumw2()
 genalpacc = TH1F("genalpacc","genalpacc", 200,0,5); genalpacc.Sumw2()
@@ -127,14 +128,15 @@ gendiphotonptalpacc = TH1F("gendiphotonptalpacc","gendiphotonptalpacc", 200,0,40
 gendralp = TH1F("gendralp","gendralp", 200,0,5); gendralp.Sumw2()
 gendralpacc = TH1F("gendralpacc","gendralpacc", 200,0,5); gendralpacc.Sumw2()
 
-genmassalp = TH1F("genmassalp","genmassalp", 200,59.75,60.25); genmassalp.Sumw2()
-genmassalpacc = TH1F("genmassalpacc","genmassalpacc", 200,59.75,60.25); genmassalpacc.Sumw2()
+genmassalp = TH1F("genmassalp","genmassalp", 200,69.75,70.25); genmassalp.Sumw2()
+genmassalpacc = TH1F("genmassalpacc","genmassalpacc", 200,69.75,70.25); genmassalpacc.Sumw2()
 
 for i,event in enumerate(eventsalp):
   if (i%1000==0): print(i)
-  if (i==80000): break
+  if (i==175000): break
   event.getByLabel(prunedLabel, handlePruned)
   event.getByLabel(genLabel, gen)
+  if (i%1000==0): print(gen.product().weight())
 
   if (gen.product().weight() > 0.0): w = 1.0
   elif (gen.product().weight() < 0.0): w = -1.0
@@ -179,123 +181,34 @@ for i,event in enumerate(eventsalp):
           gensubleadetaalpacc.Fill(pho[0].Eta())
 
 
-#alpj
-eventsalpj = Events(alpjfiles60)
+genleadetaggh.SaveAs("LeadEta/gen_ggh70.root")
+gensubleadetaggh.SaveAs("SubleadEta/gen_ggh70.root")
+genleadptggh.SaveAs("LeadPT/gen_ggh70.root")
+gensubleadptggh.SaveAs("SubleadPT/gen_ggh70.root")
+gendiphotonptggh.SaveAs("DiphotonPT/gen_ggh70.root")
+gendrggh.SaveAs("DR/gen_ggh70.root")
+genmassggh.SaveAs("Mass/gen_ggh70.root")
 
-genalpj = TH1F("genalpj","genalpj", 200,0,5); genalpj.Sumw2()
-genalpjacc = TH1F("genalpjacc","genalpjacc", 200,0,5); genalpjacc.Sumw2()
+genleadetagghacc.SaveAs("LeadEta/gen_ggh70acc.root")
+gensubleadetagghacc.SaveAs("SubleadEta/gen_ggh70acc.root")
+genleadptgghacc.SaveAs("LeadPT/gen_ggh70acc.root")
+gensubleadptgghacc.SaveAs("SubleadPT/gen_ggh70acc.root")
+gendiphotonptgghacc.SaveAs("DiphotonPT/gen_ggh70acc.root")
+gendrgghacc.SaveAs("DR/gen_ggh70acc.root")
+genmassgghacc.SaveAs("Mass/gen_ggh70acc.root")
 
-genleadetaalpj = TH1F("genleadetaalpj","genleadetaalpj", 180,-6,6); genleadetaalpj.Sumw2()
-genleadetaalpjacc = TH1F("genleadetaalpjacc","genleadetaalpjacc", 180,-6,6); genleadetaalpjacc.Sumw2()
-gensubleadetaalpj = TH1F("gensubleadetaalpj","gensubleadetaalpj", 180,-6,6); gensubleadetaalpj.Sumw2()
-gensubleadetaalpjacc = TH1F("gensubleadetaalpjacc","gensubleadetaalpjacc", 180,-6,6); gensubleadetaalpjacc.Sumw2()
+genleadetaalp.SaveAs("LeadEta/gen_alp70.root")
+gensubleadetaalp.SaveAs("SubleadEta/gen_alp70.root")
+genleadptalp.SaveAs("LeadPT/gen_alp70.root")
+gensubleadptalp.SaveAs("SubleadPT/gen_alp70.root")
+gendiphotonptalp.SaveAs("DiphotonPT/gen_alp70.root")
+gendralp.SaveAs("DR/gen_alp70.root")
+genmassalp.SaveAs("Mass/gen_alp70.root")
 
-genleadptalpj = TH1F("genleadptalpj","genleadptalpj", 200,0,200); genleadptalpj.Sumw2()
-genleadptalpjacc = TH1F("genleadptalpjacc","genleadptalpjacc", 200,0,200); genleadptalpjacc.Sumw2()
-gensubleadptalpj = TH1F("gensubleadptalpj","gensubleadptalpj", 200,0,200); gensubleadptalpj.Sumw2()
-gensubleadptalpjacc = TH1F("gensubleadptalpjacc","gensubleadptalpjacc", 200,0,200); gensubleadptalpjacc.Sumw2()
-
-gendiphotonptalpj = TH1F("gendiphotonptalpj","gendiphotonptalpj", 200,0,400); gendiphotonptalpj.Sumw2()
-gendiphotonptalpjacc = TH1F("gendiphotonptalpjacc","gendiphotonptalpjacc", 200,0,400); gendiphotonptalpjacc.Sumw2()
-gendralpj = TH1F("gendralpj","gendralpj", 200,0,5); gendralpj.Sumw2()
-gendralpjacc = TH1F("gendralpjacc","gendralpjacc", 200,0,5); gendralpjacc.Sumw2()
-
-genmassalpj = TH1F("genmassalpj","genmassalpj", 200,59.75,60.25); genmassalpj.Sumw2()
-genmassalpjacc = TH1F("genmassalpjacc","genmassalpjacc", 200,59.75,60.25); genmassalpjacc.Sumw2()
-
-for i,event in enumerate(eventsalpj):
-  if (i%1000==0): print(i)
-  if (i==80000): break
-  event.getByLabel(prunedLabel, handlePruned)
-  event.getByLabel(genLabel, gen)
-
-
-  if (gen.product().weight() > 0.0): w = 1.0
-  elif (gen.product().weight() < 0.0): w = -1.0
-  pruned = handlePruned.product()
-
-  npho=0;
-  pho={}
-  phom=TLorentzVector(0,0,0,0)
-
-  for p in pruned:
-    if (abs(p.pdgId())==22 and p.status()==1):
-      pho[npho]=TLorentzVector(p.px(),p.py(),p.pz(),p.energy())
-      npho+=1
-
-  if npho>=2:
-    phom = pho[0]+pho[1]
-    phodr = np.sqrt((pho[0].Eta()-pho[1].Eta())*(pho[0].Eta()-pho[1].Eta())+(pho[0].Phi()-pho[1].Phi())*(pho[0].Phi()-pho[1].Phi()))
-    if(abs(pho[0].Phi()-pho[1].Phi()) > np.pi): phodr = np.sqrt( (pho[0].Eta()-pho[1].Eta())*(pho[0].Eta()-pho[1].Eta()) + (2*np.pi-(pho[0].Phi()-pho[1].Phi()))*(2*np.pi-(pho[0].Phi()-pho[1].Phi())) )
-    gendralpj.Fill(phodr,w)
-    genmassalpj.Fill(phom.M(),w)
-    gendiphotonptalpj.Fill(phom.Pt(),w)
-    genleadptalpj.Fill(max(pho[0].Pt(),pho[1].Pt()),w)
-    gensubleadptalpj.Fill(min(pho[0].Pt(),pho[1].Pt()),w)
-    if (pho[0].Pt() > pho[1].Pt()):
-      genleadetaalpj.Fill(pho[0].Eta())
-      gensubleadetaalpj.Fill(pho[1].Eta())
-    else:
-      genleadetaalpj.Fill(pho[1].Eta())
-      gensubleadetaalpj.Fill(pho[0].Eta())
-    if ((pho[0].Pt()>30.0 and pho[1].Pt()>18.0) or (pho[0].Pt()>18.0 and pho[1].Pt()>30.0)):
-      if (abs(pho[0].Eta())<2.5 and abs(pho[1].Eta())<2.5):
-        gendralpjacc.Fill(phodr,w)
-        genmassalpjacc.Fill(phom.M(),w)
-        gendiphotonptalpjacc.Fill(phom.Pt(),w)
-        genleadptalpjacc.Fill(max(pho[0].Pt(),pho[1].Pt()),w)
-        gensubleadptalpjacc.Fill(min(pho[0].Pt(),pho[1].Pt()),w)
-        if (pho[0].Pt() > pho[1].Pt()):
-          genleadetaalpjacc.Fill(pho[0].Eta())
-          gensubleadetaalpjacc.Fill(pho[1].Eta())
-        else:
-          genleadetaalpjacc.Fill(pho[1].Eta())
-          gensubleadetaalpjacc.Fill(pho[0].Eta())
-
-genleadetaggh.SaveAs("LeadEta/gen_ggh60.root")
-gensubleadetaggh.SaveAs("SubleadEta/gen_ggh60.root")
-genleadptggh.SaveAs("LeadPT/gen_ggh60.root")
-gensubleadptggh.SaveAs("SubleadPT/gen_ggh60.root")
-gendiphotonptggh.SaveAs("DiphotonPT/gen_ggh60.root")
-gendrggh.SaveAs("DR/gen_ggh60.root")
-genmassggh.SaveAs("Mass/gen_ggh60.root")
-
-genleadetagghacc.SaveAs("LeadEta/gen_ggh60acc.root")
-gensubleadetagghacc.SaveAs("SubleadEta/gen_ggh60acc.root")
-genleadptgghacc.SaveAs("LeadPT/gen_ggh60acc.root")
-gensubleadptgghacc.SaveAs("SubleadPT/gen_ggh60acc.root")
-gendiphotonptgghacc.SaveAs("DiphotonPT/gen_ggh60acc.root")
-gendrgghacc.SaveAs("DR/gen_ggh60acc.root")
-genmassgghacc.SaveAs("Mass/gen_ggh60acc.root")
-
-genleadetaalp.SaveAs("LeadEta/gen_alp60.root")
-gensubleadetaalp.SaveAs("SubleadEta/gen_alp60.root")
-genleadptalp.SaveAs("LeadPT/gen_alp60.root")
-gensubleadptalp.SaveAs("SubleadPT/gen_alp60.root")
-gendiphotonptalp.SaveAs("DiphotonPT/gen_alp60.root")
-gendralp.SaveAs("DR/gen_alp60.root")
-genmassalp.SaveAs("Mass/gen_alp60.root")
-
-genleadetaalpacc.SaveAs("LeadEta/gen_alp60acc.root")
-gensubleadetaalpacc.SaveAs("SubleadEta/gen_alp60acc.root")
-genleadptalpacc.SaveAs("LeadPT/gen_alp60acc.root")
-gensubleadptalpacc.SaveAs("SubleadPT/gen_alp60acc.root")
-gendiphotonptalpacc.SaveAs("DiphotonPT/gen_alp60acc.root")
-gendralpacc.SaveAs("DR/gen_alp60acc.root")
-genmassalpacc.SaveAs("Mass/gen_alp60acc.root")
-
-genleadetaalpj.SaveAs("LeadEta/gen_alpj60.root")
-gensubleadetaalpj.SaveAs("SubleadEta/gen_alpj60.root")
-genleadptalpj.SaveAs("LeadPT/gen_alpj60.root")
-gensubleadptalpj.SaveAs("SubleadPT/gen_alpj60.root")
-gendiphotonptalpj.SaveAs("DiphotonPT/gen_alpj60.root")
-gendralpj.SaveAs("DR/gen_alpj60.root")
-genmassalpj.SaveAs("Mass/gen_alpj60.root")
-
-genleadetaalpjacc.SaveAs("LeadEta/gen_alpj60acc.root")
-gensubleadetaalpjacc.SaveAs("SubleadEta/gen_alpj60acc.root")
-genleadptalpjacc.SaveAs("LeadPT/gen_alpj60acc.root")
-gensubleadptalpjacc.SaveAs("SubleadPT/gen_alpj60acc.root")
-gendiphotonptalpjacc.SaveAs("DiphotonPT/gen_alpj60acc.root")
-gendralpjacc.SaveAs("DR/gen_alpj60acc.root")
-genmassalpjacc.SaveAs("Mass/gen_alpj60acc.root")
+genleadetaalpacc.SaveAs("LeadEta/gen_alp70acc.root")
+gensubleadetaalpacc.SaveAs("SubleadEta/gen_alp70acc.root")
+genleadptalpacc.SaveAs("LeadPT/gen_alp70acc.root")
+gensubleadptalpacc.SaveAs("SubleadPT/gen_alp70acc.root")
+gendiphotonptalpacc.SaveAs("DiphotonPT/gen_alp70acc.root")
+gendralpacc.SaveAs("DR/gen_alp70acc.root")
+genmassalpacc.SaveAs("Mass/gen_alp70acc.root")

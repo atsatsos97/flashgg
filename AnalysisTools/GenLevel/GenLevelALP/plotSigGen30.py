@@ -37,6 +37,8 @@ genggh.SetXTitle(lbl)
 genggh.SetYTitle("Gen Level Events")
 genggh.SetMinimum(0.0)
 if (var=="LeadEta" or var=="SubleadEta"): genggh.SetMaximum(5500.0)
+if (var=="LeadPT" or var=="SubleadPT" or var=="DiphotonPT"): genggh.SetMaximum(12000.0)
+if (var=="DR"): genggh.SetMaximum(2500.0)
 genggh.SetLineColor(kRed+2)
 genggh.Draw("histsame")
 
@@ -74,7 +76,7 @@ genalpjacc.SetLineStyle(2)
 genalpjacc.Draw("histsame")
 
 if (var=="DR"):
-  cat03 = TLine(0.3,0.0,0.3,3000.0)
+  cat03 = TLine(0.3,0.0,0.3,2000.0)
   cat03.SetLineColor(28)
   cat03.SetLineWidth(3)
   cat03.SetLineStyle(2)
